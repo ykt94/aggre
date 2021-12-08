@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Бронирование</title>
+    <title>Подтверждение бронирования</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 <p th:text="'Адрес: ' + ${adres} " />
-<form action="/booking">
-    <input type="hidden" name="adres" th:value="*{adres}">
-    <input type="submit" value="Бронировать">
+
+<form>
+    <input type="hidden" name="adres" th:value="*{adres}"/>
+    <input type="submit" value="Отменить"/>
 </form>
 </body>
 </html>
