@@ -1,4 +1,4 @@
-package ru.baken.aggre;
+package ru.baken.aggre.aggre;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

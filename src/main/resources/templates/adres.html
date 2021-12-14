@@ -10,5 +10,21 @@
     <input type="hidden" name="adres" th:value="*{adres}">
     <input type="submit" value="Бронировать">
 </form>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="taxo : ${taxi}">
+        <td th:text="${taxo.id}">Id</td>
+        <td th:text="${taxo.number}">Name</td>
+    </tr>
+    </tbody>
+</table>
+
+
 </body>
 </html>
